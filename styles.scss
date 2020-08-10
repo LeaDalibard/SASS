@@ -9,6 +9,22 @@
 $paddingred:16px;
 $color: indianred;
 
+a.red:link, a.red:visited {
+  background-color: $color;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a.blue:link, a.blue:visited {
+  background-color: blue;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
 
 
 
