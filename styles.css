@@ -1,134 +1,80 @@
-/*
-Error: Invalid CSS after "g": expected "{", was ""
-        on line 1 of styles.scss
-
-1: g
-
-Backtrace:
-styles.scss:1
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:688:in `block'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in `run'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
-/usr/local/bin/sass:23:in `load'
-/usr/local/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"g\": expected \"{\", was \"\"\A         on line 1 of styles.scss\A \A 1: g"; }
-
 body {
   font: 100% "Space Mono", monospace;
   color: #2748B3;
   margin: 0px;
-  padding: 0px;
+  padding: 8px;
   background-color: #000;
   background-image: radial-gradient(#fff, rgba(255, 255, 255, 0.2) 2px, transparent 40px), radial-gradient(#fff, rgba(255, 255, 255, 0.15) 1px, transparent 30px), radial-gradient(#fff, rgba(255, 255, 255, 0.1) 2px, transparent 40px), radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent 30px);
   background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
   background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
-  background-attachment: fixed
-}
+  background-attachment: fixed; }
 
 article {
   display: flex;
-  flex-wrap: wrap
-}
-
-article section {
-  flex-grow: 1;
-  flex-basis: 45%;
-  border: 1px silver solid;
-  -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-  -moz-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-  box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
-  padding: 16px;
-  margin: 16px;
-  clear: both;
-  overflow: auto;
-  box-sizing: border-box;
-}
-
-article section#selling-points {
-  flex-grow: 2;
-  flex-basis: 100%
-}
-
-article code {
-  background: #000;
-  border: 1px solid #ddd;
-  color: #666;
-  page-break-inside: avoid;
-  font-family: monospace;
-  font-size: 15px;
-  line-height: 1.6;
-  margin-bottom: 1.6em;
-  max-width: 100%;
-  overflow: auto;
-  padding: 1em 1.5em;
-  display: block;
-  word-wrap: break-word
-}
-
-article code.before {
-  float: left;
-  width: 40%
-}
-
-article code.after {
-  float: right;
-  width: 40%
-}
+  flex-wrap: wrap; }
+  article section {
+    flex-grow: 1;
+    flex-basis: 45%;
+    border: 1px silver solid;
+    -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
+    box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
+    padding: 8px;
+    margin: 16px;
+    clear: both;
+    overflow: auto;
+    box-sizing: border-box; }
+    article section #selling-points {
+      flex-grow: 2;
+      flex-basis: 100%; }
+    article section code {
+      background: #000;
+      border: 1px solid #ddd;
+      color: #666;
+      page-break-inside: avoid;
+      font-family: monospace;
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 1.6em;
+      max-width: 100%;
+      overflow: auto;
+      padding: 8px;
+      display: block;
+      word-wrap: break-word; }
+      article section code .before {
+        float: left;
+        width: 40%; }
+      article section code .after {
+        float: right;
+        width: 40%; }
 
 h1,
 h2,
 h6 {
-  color: #6B8EFF
-}
+  color: #6B8EFF; }
 
 h1 {
-  text-align: center
-}
+  text-align: center; }
 
 h6 {
   text-align: center;
   font-size: 2em;
-  padding: 32px;
-  margin-bottom: 0px
-}
+  padding: 16px; }
 
-.message,
-.success,
-.error,
-.warning {
+.message, .success, .error, .warning {
   border: 1px solid #ccc;
-  padding: 10px;
+  padding: 8px;
   color: #2748B3;
   background-color: #000;
-  width: 100%
-}
+  width: 100%; }
 
 .success {
-  background-color: green
-}
+  background-color: green; }
 
 .error {
-  background-color: red
-}
+  background-color: red; }
 
 .warning {
-  background-color: orange
-}
+  background-color: orange; }
+
+/*# sourceMappingURL=styles.css.map */
