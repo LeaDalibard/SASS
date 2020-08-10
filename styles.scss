@@ -4,21 +4,12 @@
   box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
 }
 
-$paddingred:16px;
-$paddingblue:8px;
+@import "blue";
 
+$paddingred:16px;
 $color: indianred;
 
-.blue{
-  color: blue;
-  margin: 0px;
-  padding: $paddingblue;
-  h1,
-  h2,
-  h6 {
-    color: blue;
-  }
-}
+
 
 
 body {
