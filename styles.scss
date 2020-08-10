@@ -4,12 +4,14 @@
   box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
 }
 
+$padding:8px;
+
 
 body {
   font: 100% "Space Mono", monospace;
   color: #2748B3;
   margin: 0px;
-  padding: 0px;
+  padding: $padding;
   background-color: #000;
   background-image: radial-gradient(#fff, rgba(255, 255, 255, 0.2) 2px, transparent 40px), radial-gradient(#fff, rgba(255, 255, 255, 0.15) 1px, transparent 30px), radial-gradient(#fff, rgba(255, 255, 255, 0.1) 2px, transparent 40px), radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent 30px);
   background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
@@ -27,7 +29,7 @@ article section {
   flex-basis: 45%;
   border: 1px silver solid;
   @include box-shadow;
-  padding: 16px;
+  padding: $padding;;
   margin: 16px;
   clear: both;
   overflow: auto;
@@ -50,7 +52,7 @@ article code {
   margin-bottom: 1.6em;
   max-width: 100%;
   overflow: auto;
-  padding: 1em 1.5em;
+  padding: $padding;
   display: block;
   word-wrap: break-word
 }
@@ -78,7 +80,7 @@ h1 {
 h6 {
   text-align: center;
   font-size: 2em;
-  padding: 32px;
+  padding: 2*$padding;
   margin-bottom: 0px
 }
 
@@ -87,7 +89,7 @@ h6 {
 .error,
 .warning {
   border: 1px solid #ccc;
-  padding: 10px;
+  padding: $padding;
   color: #2748B3;
   background-color: #000;
   width: 100%
