@@ -105,17 +105,19 @@ h6 {
   padding: 2*$paddingred;
 }
 
+
+
+
 .message {
   border: 1px solid #ccc;
   padding: $paddingred;
   background-color: #000;
-  width: 100%
-
+  width: 100%;
 }
 
 .success {
   @extend .message;
-  background-color: green
+  background-color: green;
 }
 
 .error {
