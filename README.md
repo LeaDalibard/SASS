@@ -9,8 +9,8 @@
 > - Extend/Inheritance
 > - Operators (Math)
 
-## To do
-> =>Find option to minify stylesheet
+>-  Creating a minify stylesheet with "sass --watch a.scss:a.css --style compressed"
+
 
 ### Link to final page:
 
