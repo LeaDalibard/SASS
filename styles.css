@@ -51,7 +51,7 @@ article {
     clear: both;
     overflow: auto;
     box-sizing: border-box; }
-    article section #selling-points {
+    article section#selling-points {
       flex-grow: 2;
       flex-basis: 100%; }
     article section code {
@@ -68,10 +68,10 @@ article {
       padding: 16px;
       display: block;
       word-wrap: break-word; }
-      article section code .before {
+      article section code.before {
         float: left;
         width: 40%; }
-      article section code .after {
+      article section code.after {
         float: right;
         width: 40%; }
 
